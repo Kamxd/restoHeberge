@@ -1,0 +1,65 @@
+.MenuSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/MenuPageBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* filter: brightness(90%); */
+}
+
+.MenuSection::after {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 100px) {
+    .MenuSection {
+        width: 100%;
+        height: 100vh;
+        transform: scaleX(1.5);
+        transform-origin: center;
+        background-size: cover;
+        image-rendering: pixelated;
+    }
+}
+
+/* .listCategory {
+    border: 2px solid #ffb03b;
+    padding: 6px;
+    border-radius: 15px;
+} */
+
+.listCategory:hover {
+    background: #ffb03b;
+
+}
+
+
+.HauteurContent{
+    height: 40rem;
+}
+
+.CommandBtn{
+    background: #ffb03b;
+}
+
+.CommandBtn:hover{
+    background: #fff;
+    color: #ffb03b;
+}
+
+.ConfirmBtn{
+    background: #ffb03b;
+    border: #ffb03b;
+}
+
+
+.ImageSize{
+    width: 20rem;
+}
+
+@media (min-width: 768px) {
+    /* styles CSS à appliquer pour une largeur d'écran maximale de 600 pixels */
+  }
+  
