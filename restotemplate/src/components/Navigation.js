@@ -39,7 +39,13 @@ const Lemenu = () => {
                                                         <span className=''>
                                                             <HiOutlineShoppingBag />
                                                         </span>
-                                                        <span className=' badge absolute -top-4 -right-1/3 text-yellow-400 mt-1 mr-1 '> { total }</span>
+                                                        <div className="relative ...">
+                                                            <div></div>
+                                                            <div className="absolute bottom-0 left-0 mb-1">
+                                                                <span className='badge ml-3 mb-2'> {total}</span>
+                                                            </div>
+                                                        </div>
+
                                                     </span>
                                                 </div>
                                             </NavLink>

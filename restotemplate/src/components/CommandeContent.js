@@ -34,12 +34,12 @@ const CommandeContent = () => {
                                     <th className="w-1/4 ..."></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                {panier.map((produit) => (
-                                    <tr key={produit.id}>
-                                        <td className="px-5 border border-gray-300">{produit.title}</td>
-                                        <td className="px-5 border border-gray-300 text-center">{produit.count}</td>
-                                        <td className=' border border-gray-300'><button style={{
+                            <tbody className=''>
+                                {panier.map((produit,index) => (
+                                    <tr key={index} className=''>
+                                        <td className="px-5 border border-l-2 border-gray-300">{produit.title}</td>
+                                        <td className="px-5  border border-gray-300 text-center">{produit.count}</td>
+                                        <td className='  border border-gray-300'><button style={{
                                             background: ''
                                         }} onClick={() => retirerDuPanier(produit)}
                                             className='my-2 ml-2 px-1  border rounded'>Retirer</button></td>
